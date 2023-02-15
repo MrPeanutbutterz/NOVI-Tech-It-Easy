@@ -31,7 +31,7 @@ const marketing = document.getElementById('marketing')
 
 function amountOfTvsSold(list) {
     let amount = 0
-    list.map((item) => {
+    list.forEach((item) => {
         amount += item.sold
     })
 
