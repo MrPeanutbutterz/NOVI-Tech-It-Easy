@@ -96,7 +96,7 @@ console.log(getAllTvBrands(inventory))
 
 //4a========================================================================================================
 function tvName(tv) {
-    return tv.brand + " " + tv.type + " - " + tv.name
+    return `${tv.brand} ${tv.type} - ${tv.name}`;
 }
 
 console.log(tvName(inventory[1]))
