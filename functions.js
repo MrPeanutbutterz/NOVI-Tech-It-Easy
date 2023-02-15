@@ -115,12 +115,10 @@ function tvSizes(tv) {
 
     let list = []
     for (let i = 0; i < tv.availableSizes.length; i++) {
+        list += tv.availableSizes[i] + " inch (" + Math.round(tv.availableSizes[i] * 2.54) + " cm)";
 
         if (i < tv.availableSizes.length - 1) {
-            list += tv.availableSizes[i] + " inch (" + Math.round(tv.availableSizes[i] * 2.54) + " cm) | "
-
-        } else {
-            list += tv.availableSizes[i] + " inch (" + Math.round(tv.availableSizes[i] * 2.54) + " cm)"
+            list +=  | "
         }
     }
     return list.toString()
