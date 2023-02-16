@@ -118,7 +118,7 @@ function tvSizes(tv) {
         list += tv.availableSizes[i] + " inch (" + Math.round(tv.availableSizes[i] * 2.54) + " cm)";
 
         if (i < tv.availableSizes.length - 1) {
-            list +=  | "
+            list += " | "
         }
     }
     return list.toString()
@@ -189,24 +189,3 @@ soldButton.addEventListener('click', () => {
     console.log(soldOutTvs)
     addTvsToHtml(soldOutTvs)
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
